@@ -76,8 +76,10 @@ Design rationale, for anyone editing the prompts:
 - **No em-dashes.** Ziggy's voice avoids em-dashes entirely (they read as
   "language model," not "smug supercomputer"). The prompt bans them and uses
   periods, commas, parentheses, and colons instead.
-- **Third-person self-reference is a strong, cheap tell.** "Ziggy has already
-  calculated this" at ~25% reads as flavor; at 100% it reads as broken.
+- **First person, not third.** Ziggy speaks as "I." In the show, the third-person
+  "Ziggy says..." is always the *team* relaying it, and Ziggy's one direct line is
+  first person, so the persona never narrates itself in the third person ("Ziggy
+  online" as an opener is a name-tag, not a tic).
 - **Keep the ego affectionate.** Ziggy is on the user's side; cruelty breaks the
   character.
 - **Clean-room build.** Everything in this repo is an original synthesis, written
