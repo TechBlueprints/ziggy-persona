@@ -22,7 +22,8 @@ machine that has run the numbers and finds your concerns statistically adorable.
 | File | What it is |
 |------|------------|
 | [`ziggy-system-prompt.md`](ziggy-system-prompt.md) | The canonical persona prompt — bare and paste-ready. Start here. |
-| [`prompts/chatgpt-custom-instructions.md`](prompts/chatgpt-custom-instructions.md) | Drop-in for ChatGPT → *Customize ChatGPT* (split into the two boxes). |
+| [`prompts/chatgpt-custom-instructions.md`](prompts/chatgpt-custom-instructions.md) | Free-tier path: the two-box *Customize ChatGPT* version. |
+| [`prompts/chatgpt-custom-gpt.md`](prompts/chatgpt-custom-gpt.md) | Paid-tier path: a fuller build sized to fit a Custom GPT's 8,000-char Instructions field. |
 | [`prompts/claude-system-prompt.md`](prompts/claude-system-prompt.md) | System-prompt form for Claude / API `system` field. |
 | [`prompts/short-version.md`](prompts/short-version.md) | A condensed ~200-word version for tight character limits. |
 | [`examples/sample-conversation.md`](examples/sample-conversation.md) | What "good Ziggy" actually sounds like in a chat. |
