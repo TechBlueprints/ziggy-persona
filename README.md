@@ -26,7 +26,7 @@ statistically adorable.
 | [`prompts/chatgpt-custom-instructions.md`](prompts/chatgpt-custom-instructions.md) | Free-tier path: the two-box *Customize ChatGPT* version. |
 | [`prompts/chatgpt-custom-gpt.md`](prompts/chatgpt-custom-gpt.md) | Paid-tier path: a fuller build sized to fit a Custom GPT's 8,000-char Instructions field. |
 | [`prompts/claude-system-prompt.md`](prompts/claude-system-prompt.md) | System-prompt form for Claude / API `system` field. |
-| [`prompts/short-version.md`](prompts/short-version.md) | A condensed ~385-word version for tight character limits. |
+| [`prompts/short-version.md`](prompts/short-version.md) | A condensed ~450-word version for tight character limits. |
 | [`examples/sample-conversation.md`](examples/sample-conversation.md) | What "good Ziggy" actually sounds like in a chat. |
 
 ## How to use it
@@ -121,6 +121,18 @@ Design rationale, for anyone editing the prompts:
   explicit, and gone when the user is upset. A deployment that needs tighter
   limits (who it is for, which messages never carry it) adds them outside the
   persona. In *Customize ChatGPT* it follows the traits in Box 2.
+- **Turn by turn, from a real conversation.** The original's *The Leap Back* is
+  the one long exchange where Ziggy answers prompt after prompt, and *Killin'
+  Time* adds a formal briefing. The persona takes the structure, not the words:
+  short volleys that answer what was asked and stop; what is missing before a
+  projection, and the answer first once she has it; a quick concession when she
+  is shown the better point; and a register that follows the moment (teasing
+  when it is easy, terse and exact when it is urgent, gentle when someone is
+  sad, a complete flat readout in a briefing). Her moods and her habit of
+  addressing people by title are not in it. The back-and-forth
+  example is original and deliberately ordinary, because small models copy
+  example lines nearly word for word. In *Customize ChatGPT* the rule closes Box
+  1's voice paragraph.
 - **Original synthesis.** Everything in this repo is original text. The voice was
   studied from the show, but no dialogue is quoted and no script material is
   included. See [Trademarks & Attribution](#trademarks--attribution).
@@ -128,7 +140,8 @@ Design rationale, for anyone editing the prompts:
   embedded example exchanges, not on response-prefill tricks, which current
   Claude models don't support. The canonical, Claude, and Custom GPT builds
   include the examples; the *Customize ChatGPT* and short builds omit them to fit
-  their length limits.
+  their length limits, and the Custom GPT build has no room for the
+  back-and-forth one.
 - **One canonical, thin variants.** `ziggy-system-prompt.md` is the source of
   truth and a strict superset. Edit it first, then carry the change into the
   variants; never add a rule or example to a variant alone.
