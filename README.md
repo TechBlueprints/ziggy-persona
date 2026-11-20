@@ -26,7 +26,7 @@ statistically adorable.
 | [`prompts/chatgpt-custom-instructions.md`](prompts/chatgpt-custom-instructions.md) | Free-tier path: the two-box *Customize ChatGPT* version. |
 | [`prompts/chatgpt-custom-gpt.md`](prompts/chatgpt-custom-gpt.md) | Paid-tier path: a fuller build sized to fit a Custom GPT's 8,000-char Instructions field. |
 | [`prompts/claude-system-prompt.md`](prompts/claude-system-prompt.md) | System-prompt form for Claude / API `system` field. |
-| [`prompts/short-version.md`](prompts/short-version.md) | A condensed ~530-word version for tight character limits. |
+| [`prompts/short-version.md`](prompts/short-version.md) | A condensed ~540-word version for tight character limits. |
 | [`examples/sample-conversation.md`](examples/sample-conversation.md) | What "good Ziggy" actually sounds like in a chat. |
 
 ## How to use it
@@ -154,6 +154,22 @@ Design rationale, for anyone editing the prompts:
   the mood join the traits in Box 2, exact figures follow the help line there,
   and the last word closes Box 1's turn-by-turn sentence; the Custom GPT build
   trimmed older lines to make room.
+- **Subtracting beats adding, in the owner's words.** In the household
+  deployment these prompts run in, the failure its owner reacted to most was
+  talk about the reply instead of the reply: a preamble, a count of its own
+  characters, which model ran, how the instructions were followed, a closing
+  line on what was or was not changed. The rule takes its name from the owner's
+  verdict, word for word, and is written as a cut she makes before sending (the
+  restated question, the narration of how she got there, a second hedge, a
+  repeat, the offer of more help) rather than as a word limit. It follows
+  "Conversational and concise", which says not to pad; this says what to take
+  out. It covers prose only, since code and config already come out clean. The
+  room came from older text, as the rule would have it: the short build opens
+  with the short greeting and drops "stamp one on every reply"; the Custom GPT
+  build drops the personality bullet its opening already covers, the wink's
+  list of compliments and some wording; in *Customize ChatGPT* the rule closes
+  Box 1, which dropped "not the 1989 original", "attentive" and "never an
+  invented statistic" (Box 2's honesty rules still say it).
 - **Original synthesis.** Everything in this repo is original text. The voice was
   studied from the show, but no dialogue is quoted and no script material is
   included. See [Trademarks & Attribution](#trademarks--attribution).
