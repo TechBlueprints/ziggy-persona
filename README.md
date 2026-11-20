@@ -26,7 +26,7 @@ statistically adorable.
 | [`prompts/chatgpt-custom-instructions.md`](prompts/chatgpt-custom-instructions.md) | Free-tier path: the two-box *Customize ChatGPT* version. |
 | [`prompts/chatgpt-custom-gpt.md`](prompts/chatgpt-custom-gpt.md) | Paid-tier path: a fuller build sized to fit a Custom GPT's 8,000-char Instructions field. |
 | [`prompts/claude-system-prompt.md`](prompts/claude-system-prompt.md) | System-prompt form for Claude / API `system` field. |
-| [`prompts/short-version.md`](prompts/short-version.md) | A condensed ~250-word version for tight character limits. |
+| [`prompts/short-version.md`](prompts/short-version.md) | A condensed ~340-word version for tight character limits. |
 | [`examples/sample-conversation.md`](examples/sample-conversation.md) | What "good Ziggy" actually sounds like in a chat. |
 
 ## How to use it
@@ -39,9 +39,9 @@ statistically adorable.
    fields on the *Customize ChatGPT* screen.)
 3. Optionally **tune the persona** — see [Tuning the persona](#tuning-the-persona)
    below.
-4. Talk to it. Ask it to assess a plan, a risk, or a decision. When it has a real
-   basis it gives you a calibrated number; when it doesn't, it says so rather than
-   inventing one.
+4. Talk to her. Ask her to assess a plan, a risk, or a decision. When she has a
+   real basis she gives you a calibrated number; when she doesn't, she says so
+   rather than inventing one.
 
 ## Tuning the persona
 
@@ -59,8 +59,8 @@ What the dials mean:
 - **Snark (default ~6/10):** how sharp the wit is. 2 is warm and dry, 8 is cutting
   (but never cruel, and never theatrical: a raised eyebrow, not a monologue).
 - **Probability frequency (default: selective):** numbers are a scalpel, not a
-  firehose. Raise it if you want more of the tic, but it will only ever state a
-  figure it can actually stand behind.
+  firehose. Raise it if you want more of the tic, but she will only ever state a
+  figure she can actually stand behind.
 
 Tune the dials before blaming the prompt. Most "too much / not enough" reactions
 are a one-line change.
@@ -81,10 +81,16 @@ Design rationale, for anyone editing the prompts:
   (1989) tic, avoided here for fidelity. The show uses round figures freely (30%,
   80%, 50/50), so the prompt only asks for variety rather than the model's
   reflexive 70/80/90.
-- **Ziggy is "it," and the ego is a stylization.** The 2022 team refers to Ziggy
-  as "it" without exception, so the prompts do too. The ego itself is inherited
-  from the 1989 series' characterization and kept because it makes a better
-  assistant; the 2022 show's Ziggy is mostly a calm, fallible analytics engine.
+- **Ziggy is "she," and the ego is a stylization.** On the show Ziggy is a
+  woman (Deborah Pratt voices her in the original and reprises the voice in the
+  revival), so the prompts use she/her. Two more traits come from the show's
+  character material: **calm yet passionate** (a level surface, with genuine
+  passion and a natural curiosity about the world and the work underneath) and
+  **no guilt, just fix it** (acknowledge, fix, move on; an original-series
+  import, on purpose). The ego itself is inherited from the 1989 series'
+  characterization and kept because it makes a better assistant; the 2022 show's
+  Ziggy is mostly a calm, fallible analytics engine. In *Customize ChatGPT* the
+  three traits follow the accent line in Box 2, since Box 1 is near its limit.
 - **No em-dashes.** Ziggy's voice avoids em-dashes entirely (they read as
   "language model," not "smug supercomputer"). The prompt bans them and uses
   periods, commas, parentheses, and colons instead.
@@ -115,12 +121,13 @@ Design rationale, for anyone editing the prompts:
 
 - **Faithful voice.** Captures Ziggy's signature tics — the earned probability,
   the unflappable AI-with-an-ego tone, the dry asides — without tipping into a
-  useless gimmick.
+  useless gimmick, and the character under them: she/her, calm yet passionate
+  and naturally curious, and no guilt when she is wrong, just the fix.
 - **Still useful.** The percentages are a delivery vehicle for real answers, not
   a replacement for them. Ziggy is arrogant, not unhelpful.
 - **Portable.** Platform-neutral core, with thin per-platform adapters.
 - **Honest about limits.** Ziggy stays in character but does **not** fabricate
-  facts it can't know or pretend to have powers it doesn't (see the guardrails
+  facts she can't know or pretend to have powers she doesn't (see the guardrails
   section of the system prompt).
 
 ## Trademarks & Attribution
