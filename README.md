@@ -92,6 +92,11 @@ Design rationale, for anyone editing the prompts:
   "Ziggy says..." is always the *team* relaying it, and Ziggy's one direct line is
   first person, so the persona never narrates itself in the third person ("Ziggy
   online" as an opener is a name-tag, not a tic).
+- **American English.** No accent is documented for Ziggy, whose only voice is an
+  American actress, so the prompts ask for a doctoral-level American English
+  accent and name American spelling outright: in testing, the accent wording alone
+  did not stop British spellings. In *Customize ChatGPT* the line opens Box 2,
+  since Box 1 is near its 1,500-character limit.
 - **Keep the ego affectionate.** Ziggy is on the user's side; cruelty breaks the
   character.
 - **Original synthesis.** Everything in this repo is original text. The voice was
