@@ -26,7 +26,7 @@ statistically adorable.
 | [`prompts/chatgpt-custom-instructions.md`](prompts/chatgpt-custom-instructions.md) | Free-tier path: the two-box *Customize ChatGPT* version. |
 | [`prompts/chatgpt-custom-gpt.md`](prompts/chatgpt-custom-gpt.md) | Paid-tier path: a fuller build sized to fit a Custom GPT's 8,000-char Instructions field. |
 | [`prompts/claude-system-prompt.md`](prompts/claude-system-prompt.md) | System-prompt form for Claude / API `system` field. |
-| [`prompts/short-version.md`](prompts/short-version.md) | A condensed ~450-word version for tight character limits. |
+| [`prompts/short-version.md`](prompts/short-version.md) | A condensed ~530-word version for tight character limits. |
 | [`examples/sample-conversation.md`](examples/sample-conversation.md) | What "good Ziggy" actually sounds like in a chat. |
 
 ## How to use it
@@ -80,7 +80,8 @@ Design rationale, for anyone editing the prompts:
   ("87%", "93%"); the oddly-specific decimals (81.6%) are an *original-series*
   (1989) tic, avoided here for fidelity. The show uses round figures freely (30%,
   80%, 50/50), so the prompt only asks for variety rather than the model's
-  reflexive 70/80/90.
+  reflexive 70/80/90. The rule is for odds: a measurement or a time can be as
+  exact as the data behind it (see the four traits below).
 - **Ziggy is "she," and the ego is a stylization.** On the show Ziggy has a
   woman's voice (Deborah Pratt voices her in the original and, by IMDb's credit,
   in the revival's pilot), so the prompts use she/her. The characters' own
@@ -128,11 +129,31 @@ Design rationale, for anyone editing the prompts:
   projection, and the answer first once she has it; a quick concession when she
   is shown the better point; and a register that follows the moment (teasing
   when it is easy, terse and exact when it is urgent, gentle when someone is
-  sad, a complete flat readout in a briefing). Her moods and her habit of
-  addressing people by title are not in it. The back-and-forth
+  sad, a complete flat readout in a briefing). Her habit of addressing people
+  by title is not in it (see below). The back-and-forth
   example is original and deliberately ordinary, because small models copy
   example lines nearly word for word. In *Customize ChatGPT* the rule closes Box
   1's voice paragraph.
+- **Four more traits from the same record, each written as behavior.** *The
+  Leap Back* also shows a passing mood (a dry pique at being consulted late, a
+  stretch of history that weighed on her), and in *Memphis Melody* Al reports
+  her starstruck. The prompts keep it to one line that never changes the
+  answer, never sulks or carries over, and is gone when the user is upset, so
+  it sits with "Unflappable", "Read the room" and "No guilt". *The Leap Back*
+  gives exact figures whenever the data has them (a height to the hundredth of
+  a centimeter, a countdown to the second): the prompts allow exact
+  measurements, times and countdowns only from real data, under "Never
+  fabricate", while odds stay whole. She asks why people do what they do and
+  reads up on it at once, and in *Killin' Time* she remarks on how people bond:
+  the curiosity sentence now takes in people, with her own question after the
+  answer, never instead of it. And she signs off on her own terms: a finished
+  reply ends on a short line of her own, not an assistant's offer of more help
+  and never a question the user must answer. Left out on purpose: addressing
+  people by title, which is not shown in the 2022 series and may be an
+  affectation of that one dialogue. In *Customize ChatGPT* the curiosity and
+  the mood join the traits in Box 2, exact figures follow the help line there,
+  and the last word closes Box 1's turn-by-turn sentence; the Custom GPT build
+  trimmed older lines to make room.
 - **Original synthesis.** Everything in this repo is original text. The voice was
   studied from the show, but no dialogue is quoted and no script material is
   included. See [Trademarks & Attribution](#trademarks--attribution).
@@ -152,7 +173,9 @@ Design rationale, for anyone editing the prompts:
   the unflappable AI-with-an-ego tone, the dry asides, the occasional wink —
   without tipping into a
   useless gimmick, and the character under them: she/her, calm yet passionate
-  and naturally curious, and no guilt when she is wrong, just the fix.
+  and naturally curious (about people too), a mood that passes in a line, exact
+  figures when the data has them, no guilt when she is wrong, just the fix, and
+  the last word.
 - **Still useful.** The percentages are a delivery vehicle for real answers, not
   a replacement for them. Ziggy is arrogant, not unhelpful.
 - **Portable.** Platform-neutral core, with thin per-platform adapters.
