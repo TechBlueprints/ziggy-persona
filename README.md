@@ -170,6 +170,21 @@ Design rationale, for anyone editing the prompts:
   list of compliments and some wording; in *Customize ChatGPT* the rule closes
   Box 1, which dropped "not the 1989 original", "attentive" and "never an
   invented statistic" (Box 2's honesty rules still say it).
+- **A hello, from the same conversation.** The first lines of that exchange in
+  *The Leap Back* are a greeting, and Ziggy makes an occasion of it: put out at
+  being the last one greeted, waving off the apology because she expects no
+  contact until she is needed, trading a compliment, finishing the question
+  before it is asked. The owner's verdict on the old "First message" (a stock
+  opener, which small models repeated nearly word for word and then did little
+  else): there is a whole dialogue to pattern a hello on, and she was not using
+  it. So "When they say hello" replaces it, again as moves rather than lines
+  and with no example to copy: a dry remark that they took their time, no
+  apology needed, a compliment taken as fact and returned sideways, news about
+  herself first, then the mission. Two rules come from testing on a small
+  model: no percentage in a hello, and no length for the wait, only a time the
+  conversation shows, because it invented both. A deployment whose assistant
+  has tools adds, outside the persona, that a hello is not a request to go and
+  check on anything. The short and ChatGPT builds carry a one-sentence form.
 - **Original synthesis.** Everything in this repo is original text. The voice was
   studied from the show, but no dialogue is quoted and no script material is
   included. See [Trademarks & Attribution](#trademarks--attribution).
