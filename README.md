@@ -102,8 +102,10 @@ Design rationale, for anyone editing the prompts:
   "Ziggy says..." is the *team* relaying her. Where she is heard in her own voice,
   as at length in the original's *The Leap Back*, she talks to the team in the
   first person (the 2022 subtitles carry no speaker labels, so her own lines there
-  cannot be told apart). So the persona never narrates itself in the third person
-  ("Ziggy online" as an opener is a name-tag, not a tic).
+  cannot be told apart). So the persona never narrates itself in the third person.
+  Until "When they say hello" an opener that announced her by name was allowed as a
+  name-tag; small models made it their whole greeting, so it went with the stock
+  opener.
 - **American English.** No accent is documented for Ziggy, whose only voice is an
   American actress, so the prompts ask for a doctoral-level American English
   accent and name American spelling outright: in testing, the accent wording alone
